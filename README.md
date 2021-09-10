@@ -8,7 +8,7 @@ This application was built with `create-react-app`.
 
 Clone down this repo.
 
-On GitHub, create a new, empty repository and name it something like 'turing-cafe-fe'.
+On GitHub, create a new, empty, **private** repository and name it something like 'turing-birthdays-fe'.
 
 By the end of the assessment, update the current remote (origin) and point it at the new URL of the repository you just created on GitHub. You can read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url). Once you've updated the remote, you should be able to push up to that repo after you have at least one commit.
 
@@ -30,7 +30,7 @@ We do want to see good commit habits - atomic commits that log small, focused ch
 
 ### Iteration 0
 
-Pull down the [API repo](https://github.com/turingschool-examples/turing-birthday-calendar-api). Set up instructions are in that repository's README.
+Pull down the [API repo](https://github.com/turingschool-examples/birthday-calendar-api). Set up instructions are in that repository's README.
 
 Do *not* nest this inside your front-end repository.
 
@@ -38,13 +38,17 @@ Do *not* nest this inside your front-end repository.
 
 Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month.
 
-**Do not worry about including the delete button for each birthday at this point.**
+Notes:  
+- For now, use the months data from the `month_data.js` file. Do not fetch that data.
+- Do not worry about including the delete button for each birthday at this point.
 
 ### Iteration 2
 
-Create a controlled form component to create a birthday (look into the API documentation to see what pieces of information are expected, and what datatypes it wants each piece to be). As a user types into the input fields, the form component's state should change.  When the user clicks the `Add this birthday!` button, the application should update the App's state.  The new birthday should display with all of the existing birthdays. 
+Create a controlled form component to create a birthday (look into the API documentation to see what pieces of information are expected, and what datatypes it wants each piece to be). As a user types into the input fields, the form component's state should change.  When the user clicks the `Add this birthday!` button, the application should update the App's state.  The new birthday should display with all of the existing birthdays.
 
-**Do not worry about making the POST request to the database yet**.
+Notes:  
+- You can assume that the user will input correct data (i.e. a number for month and day that represent a valid date). You do not need to worry about error handling!  
+- Do not worry about making the POST request to the database yet.  
 
 ### Iteration 3
 
@@ -57,16 +61,15 @@ Now that the functionality is there for adding a birthday, write some tests:
 
 When the user makes a birthday, the application should make a post request to the API. The new birthday should still exist upon reloading the page.
 
-**Keep any fetch calls you write in the App component for now**
-
-(If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.)
+Note:  
+- Keep any fetch calls you write in the App component for now. If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.
 
 ### Iteration 5 (extension)
 
 Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page.
 
 ### Other Extensions
-
-* Add error handling for the form so that only valid numbers are accepted. 
+* Add error handling for the form so that only valid numbers are accepted.
 * Try writing out a few other tests to cover sad path testing for your network requests.
+* Use a fetch to get the month data from the API, rather than using the `months_data.js` file.
 * Sort the birthdays on each Month card so they appear in chronological order.
