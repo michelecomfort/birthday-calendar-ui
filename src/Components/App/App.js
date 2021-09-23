@@ -1,8 +1,8 @@
 import { Component } from 'react';
+import months from '../../months_data';
 import './App.css';
 
 class App extends Component {
-
 
   render() {
     return (
