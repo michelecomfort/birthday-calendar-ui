@@ -6,11 +6,7 @@ This application was built with `create-react-app`.
 
 ### Set Up
 
-Clone down this repo.
-
-On GitHub, create a new, empty, **private** repository and name it something like 'turing-birthdays-fe'.
-
-By the end of the assessment, update the current remote (origin) and point it at the new URL of the repository you just created on GitHub. You can read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url). Once you've updated the remote, you should be able to push up to that repo after you have at least one commit.
+Fork + clone down this repo.
 
 Run `npm install` to install dependencies for the repo.
 
@@ -39,7 +35,11 @@ Do *not* nest this inside your front-end repository.
 Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month.
 
 Notes:  
+<<<<<<< HEAD
 - For now, use the months data from the `month_data.js` file. Do not fetch that data.
+=======
+- For now, use the months data from the `month_data.js` file. Do not fetch that data.
+>>>>>>> 728f736c00f1a2a8be2dc7f951a809e6325aabe9
 - Do not worry about including the delete button for each birthday at this point.
 
 ### Iteration 2
@@ -69,7 +69,11 @@ Note:
 Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page.
 
 ### Other Extensions
+<<<<<<< HEAD
 * Add error handling for the form so that only valid numbers are accepted.
+=======
+* Add error handling for the form so that only valid numbers are accepted.
+>>>>>>> 728f736c00f1a2a8be2dc7f951a809e6325aabe9
 * Try writing out a few other tests to cover sad path testing for your network requests.
 * Use a fetch to get the month data from the API, rather than using the `months_data.js` file.
 * Sort the birthdays on each Month card so they appear in chronological order.
