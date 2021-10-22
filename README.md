@@ -26,6 +26,8 @@ You will have 3 hours to build this application.
 
 ![turing-bdays-screenshot](https://user-images.githubusercontent.com/51416773/132622036-217cc0ad-da6b-464a-9b8a-f4bc015dbddb.png)
 
+While CSS is not the learning goal here, you should do your best to match the comp provided.  
+
 We do want to see good commit habits - atomic commits that log small, focused changesets. Don't worry about creating GitHub issues, though.
 
 ### Iteration 0
@@ -36,7 +38,7 @@ Do *not* nest this inside your front-end repository.
 
 ### Iteration 1
 
-Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month.
+Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month. If a month does not have any birthdays in it, it should say "No birthdays this month."
 
 Notes:  
 - For now, use the months data from the `month_data.js` file. Do not fetch that data.
