@@ -59,14 +59,14 @@ Now that the functionality is there for adding a birthday, write some tests:
 
 ### Iteration 4 (extension)
 
-When the user makes a birthday, the application should make a post request to the API. The new birthday should still exist upon reloading the page.
+When the user makes a birthday, the application should make a POST request to the API. The new birthday should still exist upon reloading the page.
 
 Note:  
 - Keep any fetch calls you write in the App component for now. If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.
 
 ### Iteration 5 (extension)
 
-Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page.
+Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page. You'll need to make a DELETE request for this.
 
 ### Other Extensions
 * Add error handling for the form so that only valid numbers are accepted.
