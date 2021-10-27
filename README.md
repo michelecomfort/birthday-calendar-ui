@@ -26,7 +26,7 @@ You will have 3 hours to build this application.
 
 ![turing-bdays-screenshot](https://user-images.githubusercontent.com/51416773/132622036-217cc0ad-da6b-464a-9b8a-f4bc015dbddb.png)
 
-While CSS is not the learning goal here, you should do your best to match the comp provided.  
+While CSS is not the learning goal here, you should do your best to match the comp provided. The colors can be found in the `App.css` file.    
 
 We do want to see good commit habits - atomic commits that log small, focused changesets. Don't worry about creating GitHub issues, though.
 
