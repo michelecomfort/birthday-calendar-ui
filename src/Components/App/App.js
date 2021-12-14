@@ -1,22 +1,19 @@
-import { Component } from 'react';
-import months from '../../months_data';
 import './App.css';
+import { months } from '../../months_data';
 
-class App extends Component {
+function App() {
 
-  render() {
-    return (
-      <div className="App">
-        <h1>Birthdays</h1>
-        <div className='bday-form'>
+  return (
+    <div className="App">
+      <h1>Birthdays</h1>
+      <div className='bday-form'>
 
-        </div>
-        <div className='bday-container'>
-
-        </div>
       </div>
-    );
-  }
+      <div className='bday-container'>
+
+      </div>
+    </div>
+  );
 }
 
 export default App;

@@ -22,6 +22,8 @@ You will have 3 hours to build this application.
 
 ![turing-bdays-screenshot](https://user-images.githubusercontent.com/51416773/132622036-217cc0ad-da6b-464a-9b8a-f4bc015dbddb.png)
 
+While CSS is not the learning goal here, you should do your best to match the comp provided. The colors can be found in the `App.css` file.    
+
 We do want to see good commit habits - atomic commits that log small, focused changesets. Don't worry about creating GitHub issues, though.
 
 ### Iteration 0
@@ -35,11 +37,7 @@ Do *not* nest this inside your front-end repository.
 Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month.
 
 Notes:  
-<<<<<<< HEAD
 - For now, use the months data from the `month_data.js` file. Do not fetch that data.
-=======
-- For now, use the months data from the `month_data.js` file. Do not fetch that data.
->>>>>>> 728f736c00f1a2a8be2dc7f951a809e6325aabe9
 - Do not worry about including the delete button for each birthday at this point.
 
 ### Iteration 2
@@ -59,14 +57,14 @@ Now that the functionality is there for adding a birthday, write some tests:
 
 ### Iteration 4 (extension)
 
-When the user makes a birthday, the application should make a post request to the API. The new birthday should still exist upon reloading the page.
+When the user makes a birthday, the application should make a POST request to the API. The new birthday should still exist upon reloading the page.
 
 Note:  
 - Keep any fetch calls you write in the App component for now. If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.
 
 ### Iteration 5 (extension)
 
-Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page.
+Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page. You'll need to make a DELETE request for this.
 
 ### Other Extensions
 * Add error handling for the form so that only valid numbers are accepted.
