@@ -6,11 +6,7 @@ This application was built with `create-react-app`.
 
 ### Set Up
 
-Clone down this repo.
-
-On GitHub, create a new, empty, **private** repository and name it something like 'turing-birthdays-fe'.
-
-By the end of the assessment, update the current remote (origin) and point it at the new URL of the repository you just created on GitHub. You can read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url). Once you've updated the remote, you should be able to push up to that repo after you have at least one commit.
+Fork + clone down this repo.
 
 Run `npm install` to install dependencies for the repo.
 
@@ -38,7 +34,7 @@ Do *not* nest this inside your front-end repository.
 
 ### Iteration 1
 
-Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month. If a month does not have any birthdays in it, it should say "No birthdays this month."
+Get all existing birthdays on page load and display them on the DOM, with each birthday appearing in the correct month.
 
 Notes:  
 - For now, use the months data from the `month_data.js` file. Do not fetch that data.
