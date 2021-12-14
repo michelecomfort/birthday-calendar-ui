@@ -69,11 +69,7 @@ Note:
 Delete a birthday when the user clicks the `X` button.  The deletion should persist upon reloading the page.
 
 ### Other Extensions
-<<<<<<< HEAD
 * Add error handling for the form so that only valid numbers are accepted.
-=======
-* Add error handling for the form so that only valid numbers are accepted.
->>>>>>> 728f736c00f1a2a8be2dc7f951a809e6325aabe9
 * Try writing out a few other tests to cover sad path testing for your network requests.
 * Use a fetch to get the month data from the API, rather than using the `months_data.js` file.
 * Sort the birthdays on each Month card so they appear in chronological order.
