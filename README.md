@@ -4,16 +4,6 @@
 
 This application was built with `create-react-app`.
 
-### Set Up
-
-Fork + clone down this repo.
-
-Run `npm install` to install dependencies for the repo.
-
-Run `npm start` to start up your React server.
-
-Run `npm run cypress` to start up the Cypress testing server.
-
 ### Expectations / Rules
 
 Build a React App that displays the birthdays of the Turing community!
@@ -28,9 +18,15 @@ We do want to see good commit habits - atomic commits that log small, focused ch
 
 ### Iteration 0
 
-Pull down the [API repo](https://github.com/turingschool-examples/birthday-calendar-api). Set up instructions are in that repository's README.
+Fork + clone this repo.
 
-Do *not* nest this inside your front-end repository.
+Run `npm install` to install dependencies for the repo.
+
+Pull down the [API repo](https://github.com/turingschool-examples/birthday-calendar-api). Set up instructions are in that repository's README. Do *not* nest this inside your front-end repository.
+
+Run `npm start` to start up your React server.
+
+Run `npm run cypress` to start up the Cypress testing server.
 
 ### Iteration 1
 
