@@ -3,9 +3,10 @@ import Month from '../Month/Month.js'
 import './Calendar.css'
 
 const Calendar = ({ months, birthdays }) => {
+  console.log(birthdays)
   let allMonths = months.map(month => {
     let bdayPeople = birthdays.filter(bday => {
-      return bday.month === month.id
+      return parseInt(bday.month) === month.id
     })
       return (
         <Month
@@ -14,12 +15,9 @@ const Calendar = ({ months, birthdays }) => {
         bdayPeople={bdayPeople}
         />
       )
-
-
-
   })
-  return (
 
+  return (
     <div className='month-grid'>
       {allMonths}
     </div>

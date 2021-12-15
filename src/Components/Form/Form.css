@@ -13,12 +13,25 @@ label {
   flex-direction: column;
 }
 
-input {
+input,
+.month-dropdown {
+  font-family: inherit;
+  font-size: 14px;
   margin-right: 10px;
+  padding: 5px;
   width: 20vw;
 }
 
 button {
+  background-color: #5BE1E6;
   border: none;
   border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  padding: 16px;
+}
+
+select {
+  -webkit-appearance: none;
+ -moz-appearance: none;
 }
