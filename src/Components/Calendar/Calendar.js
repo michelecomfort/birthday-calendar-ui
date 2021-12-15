@@ -2,15 +2,20 @@ import React from 'react'
 import Month from '../Month/Month.js'
 import './Calendar.css'
 
-const Calendar = ({ months }) => {
-  let allMonths
-  allMonths = months.map(month => {
-    return (
-      <Month
+const Calendar = ({ months, birthdays }) => {
+  let allMonths = months.map(month => {
+    let bdayPeople = birthdays.filter(bday => {
+      return bday.month === month.id
+    })
+      return (
+        <Month
         name={month.name}
         id={month.id}
-      />
-    )
+        bdayPeople={bdayPeople}
+        />
+      )
+
+
 
   })
   return (

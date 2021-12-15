@@ -14,7 +14,7 @@ class App extends Component {
     }
   }
 
-  getBirthdays = () => {
+  componentDidMount = () => {
     fetch('http://localhost:3001/api/v1/birthdays')
       .then(res => res.json())
         .then(data => {
@@ -27,12 +27,8 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Birthdays</h1>
-      <div className='bday-form'>
         <Form />
-      </div>
-      <Calendar months={this.state.months} />
-
-
+        <Calendar months={this.state.months} birthdays={this.state.birthdays} />
       </main>
     );
   }

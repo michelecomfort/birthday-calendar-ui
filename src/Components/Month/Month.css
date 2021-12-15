@@ -2,8 +2,24 @@
   background-color: white;
   border: 6px solid black;
   display: flex;
+  flex-direction: column;
   height: 16vw;
-  justify-content: center;
   width: 20vw;
   margin: 10px;
+}
+.month-name {
+  display: flex;
+  justify-content: center;
+
+}
+
+.bday-people {
+  display: flex;
+  margin-left: 10px;
+  align-items: space-around;
+}
+
+h4 {
+  font-weight: 500;
+
 }
