@@ -1,0 +1,9 @@
+.month-box {
+  background-color: white;
+  border: 6px solid black;
+  display: flex;
+  height: 16vw;
+  justify-content: center;
+  width: 20vw;
+  margin: 10px;
+}

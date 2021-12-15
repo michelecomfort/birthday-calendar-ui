@@ -25,3 +25,7 @@ h1 {
   width: 30%;
   margin: auto;
 }
+
+/* .bday-container {
+  grid-template-columns: repeat(4, 1fr);
+} */
