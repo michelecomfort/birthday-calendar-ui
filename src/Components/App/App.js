@@ -24,14 +24,12 @@ class App extends Component {
 
   addBday = async(newBday) => {
     await this.setState({ birthdays: [...this.state.birthdays, newBday]})
-    console.log(this.state.birthdays)
   }
 
   render() {
-    console.log(this.state.months)
     return (
       <main className="App">
-        <h1>Birthdays</h1>
+        <h1 data-cy='page-heading'>Birthdays</h1>
         <Form addBday={this.addBday}/>
         <Calendar months={this.state.months} birthdays={this.state.birthdays} />
       </main>

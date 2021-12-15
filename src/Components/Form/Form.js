@@ -35,11 +35,12 @@ class Form extends Component {
             name='name'
             value={this.state.name}
             onChange={e => this.handleChange(e)}
+            data-cy='name-input'
           />
         </label>
 
         <label>Month:
-          <select type='number' name='month' className='month-dropdown' onChange={e => this.handleChange(e)}>
+          <select type='number' name='month' className='month-dropdown' onChange={e => this.handleChange(e)} data-cy='month-input'>
             <option ></option>
             <option value={1}>January</option>
             <option value={2}>February</option>
@@ -67,9 +68,10 @@ class Form extends Component {
             name='day'
             value={this.state.day}
             onChange={e => this.handleChange(e)}
+            data-cy='day-input'
           />
         </label>
-        <button onClick={e => this.submitNewBirthday(e)}>Add this birthday!</button>
+        <button onClick={e => this.submitNewBirthday(e)} data-cy='bday-button'>Add this birthday!</button>
       </form>
     )
   }
